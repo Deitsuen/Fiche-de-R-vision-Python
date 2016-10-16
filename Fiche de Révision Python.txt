@@ -179,7 +179,7 @@ est pareil pour le "bon ce chocolat"
 
 de Trop bon ce chocolat
 
----------------------Crée des questions--------------------------------------------------------------
+---------------------------------------------------Crée des questions----------------------------------------------------------
 
 Pour crée des questions il faut faire ceci
 
@@ -234,7 +234,7 @@ Il faut faire cela
 
 hauteur= raw_input("Quel taille fait tu ?")
 
----------------------------------Print "Sert à afficher un phrase à l'exception que celle ci sois dans des guillemets"
+---------------Print "Sert à afficher un phrase à l'exception que celle ci sois dans des guillemets"-------
 
 # Sert à écrire une phrase dans le code sans que cela interviennent sur celui ci
 
