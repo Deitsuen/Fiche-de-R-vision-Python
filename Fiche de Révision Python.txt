@@ -1,27 +1,27 @@
-Print "Sert à afficher un phrase à l'exception que celle ci sois dans des guillemets"
+Print "Sert Ã  afficher un phrase Ã  l'exception que celle ci sois dans des guillemets"
 
-# Sert à écrire une phrase dans le code sans que cela interviennent sur celui ci
+# Sert Ã  Ã©crire une phrase dans le code sans que cela interviennent sur celui ci
 
-"+" Sert à additioner, "-" Sert à soustraire, "/" Sert à divisé, "*" Sert à multiplier
-"%" Pourcent, "<" Moins que, "<=" l'égale de inférieur, ">=" égal de supérieur
+"+" Sert Ã  additioner, "-" Sert Ã  soustraire, "/" Sert Ã  divisÃ©, "*" Sert Ã  multiplier
+"%" Pourcent, "<" Moins que, "<=" l'Ã©gale de infÃ©rieur, ">=" Ã©gal de supÃ©rieur
 
 -------------------------------------------------------------------------------------------
-Crée une Variable
+CrÃ©e une Variable
 
-J'écris un mot j'écris égal avec un chiffre ou un mot dedans ou une autre variable dedans ou même
+J'Ã©cris un mot j'Ã©cris Ã©gal avec un chiffre ou un mot dedans ou une autre variable dedans ou mÃªme
 des phrases
 
 Voiture = 100 
 
 ---------Inclure les variables dans des phrases----------------
 
-Il y a 2 manière de montrer d'inclure des variables dans une phrase
+Il y a 2 maniÃ¨re de montrer d'inclure des variables dans une phrase
 
-Manière 1 : print "Il y a plus de", Voiture, " voiture dans l'entrepot."
+ManiÃ¨re 1 : print "Il y a plus de", Voiture, " voiture dans l'entrepot."
 
-Manière 2 : print "Il y a plus de %d voiture dans l'entrepot." % Voiture
+ManiÃ¨re 2 : print "Il y a plus de %d voiture dans l'entrepot." % Voiture
 
-(La manière 2 est plus simple à utiliser et permet de mettre plus facilement un nombre élevé de 
+(La maniÃ¨re 2 est plus simple Ã  utiliser et permet de mettre plus facilement un nombre Ã©levÃ© de 
 variable)
 
 Exemple :
@@ -32,13 +32,13 @@ entrepot= l'entrepot
 
 print "Il y a plus de %d voiture dans %d." % (Voiture, entrepot)
 
-sa montrera le résultat après le égale donc 100 et l'entrepot
+sa montrera le rÃ©sultat aprÃ¨s le Ã©gale donc 100 et l'entrepot
 
 Il y a plus de 100 voiture dans l'entrepot.
 
---------------------------------Print des variables et les addtioné entre elle -------------------
+--------------------------------Print des variables et les addtionÃ© entre elle -------------------
 On peut aussi print des variables avec des phrases dedans ce qui affichera la phrase
-ou additioné plusieur variable pour constituer des phrase ou autres
+ou additionÃ© plusieur variable pour constituer des phrase ou autres
 
 et si l'ont fait
 
@@ -55,7 +55,7 @@ sa affichera
 Bonjour comment va tu . 
 
 -----------------------------Afficher plusieur fois dans une phrase-----------------------------
-On peut aussi afficher plusieur fois la même chose dans un phrase avec le code suivant 
+On peut aussi afficher plusieur fois la mÃªme chose dans un phrase avec le code suivant 
 
 Print "!" * 10 
 
@@ -63,27 +63,27 @@ ce qui affichera
 
 !!!!!!!!!!
 
-----------------------Prédéfinir le nombre de chose qu'on peut mettre dans une phrase------------------------------- 
+----------------------PrÃ©dÃ©finir le nombre de chose qu'on peut mettre dans une phrase------------------------------- 
 
-Pour prédéfinir le nombre de chose affichable sur une phrase on fait une variable qui est égale au
-à d'autre variable qui définiront combien de variable peut on mettre dans une phrase
+Pour prÃ©dÃ©finir le nombre de chose affichable sur une phrase on fait une variable qui est Ã©gale au
+Ã  d'autre variable qui dÃ©finiront combien de variable peut on mettre dans une phrase
 
 en gros tu fait sa 
 
 formatter = %r %r %r %r
 
-et pour crée la phrase qui aura les paramètre prédéfini on fait 
+et pour crÃ©e la phrase qui aura les paramÃ¨tre prÃ©dÃ©fini on fait 
 
-print formatter % ("Un", "Deux", "Trois", "Quatre") on peut bien evidemment mettre des chiffre à 
+print formatter % ("Un", "Deux", "Trois", "Quatre") on peut bien evidemment mettre des chiffre Ã  
 
-la différence qu'il ne sera pas nécéssaire de mettre de guillemet car sa considère les chiffre
-appart entre eux et non mélanger comme dans une phrase 
+la diffÃ©rence qu'il ne sera pas nÃ©cÃ©ssaire de mettre de guillemet car sa considÃ¨re les chiffre
+appart entre eux et non mÃ©langer comme dans une phrase 
 
 Exemple: print formatter % (1, 2, 3, 4)
 
 ----------------Utiliser des phrase et des variables,l'espacement et les newline---------------------
 
-On va crée une variable qui va contenir une phrase ou quelque chose qui complète une phrase
+On va crÃ©e une variable qui va contenir une phrase ou quelque chose qui complÃ¨te une phrase
 
 Jour = "lundi mardi mercredi jeudi vendredi samedi dimanche"
 
@@ -93,7 +93,7 @@ print "Voici les jour de la semaine:", Jour
 
 ce qui affichera: Voici les jour de la semaine lundi mardi mercredi jeudi vendredi samedi dimanche
 
-Maintenant je vais te montrer comment faire quelque chose de plus "listé" 
+Maintenant je vais te montrer comment faire quelque chose de plus "listÃ©" 
 
 on va reprendre nos jours donc
 
@@ -123,36 +123,36 @@ samedi
 
 dimanche
 
-Le "\n" met à la ligne automatiquement tous ce qui est après lui c'est pour ça que lundi n'est pas
-à la ligne mais que les autres jours si
+Le "\n" met Ã  la ligne automatiquement tous ce qui est aprÃ¨s lui c'est pour Ã§a que lundi n'est pas
+Ã  la ligne mais que les autres jours si
 
 ------------------Mettre des guillemets simple ou double dans une chaine simple ou double---------
 
 Parfois il arrive de vouloir mettre une double guillement dans une chaine double mais sa pose
-problème car python ne s'est plus qu'elle chaine est laquelle exemple
+problÃ¨me car python ne s'est plus qu'elle chaine est laquelle exemple
 
-print "Aimerai tu "avoir" une glace" python va considérez "avoir" comme une chaine et sa fera
-une error alors pour règlez se problème il faut faire ceci
+print "Aimerai tu "avoir" une glace" python va considÃ©rez "avoir" comme une chaine et sa fera
+une error alors pour rÃ¨glez se problÃ¨me il faut faire ceci
 
-"Aimerai tu \"avoir\" une glace" et pour les chaines à simple guillemets on fait la même chose avec
+"Aimerai tu \"avoir\" une glace" et pour les chaines Ã  simple guillemets on fait la mÃªme chose avec
 les guillemets simple Exemple : 'Aimerai tu \'avoir\' une glace'
 
 Et si tu te pose la question peut ont mettre dans une phrase une guillement simple dans une chaine 
-double et une guillemet double dans une chaine simple oui car les chaine sont différente de la 
+double et une guillemet double dans une chaine simple oui car les chaine sont diffÃ©rente de la 
 guillemets mise 
 
-------------------------crée des chaines espacés et crée des phrase espacés--------------------------
+------------------------crÃ©e des chaines espacÃ©s et crÃ©e des phrase espacÃ©s--------------------------
 
-Pour crée une chaine espacés il faut faire cela Exemple :
+Pour crÃ©e une chaine espacÃ©s il faut faire cela Exemple :
 
 print """ 
-Ceci est espacés du reste du script
+Ceci est espacÃ©s du reste du script
 """
 
-ET NON CELA EXEMPLE: print """Ceci est espacés"""
+ET NON CELA EXEMPLE: print """Ceci est espacÃ©s"""
 
 
-Pour les phrases espacés il faut faire ceci 
+Pour les phrases espacÃ©s il faut faire ceci 
 
 Exemple: print "C'est\tbeau\tle\tsoleil
 
@@ -160,51 +160,51 @@ ce qui donnera
 
 C'est    beau    le    soleil 
 
-On peut le faire aussi en début de phrase pour faire des phrases décalés 
+On peut le faire aussi en dÃ©but de phrase pour faire des phrases dÃ©calÃ©s 
 
 Exemple print "\tTrop bon ce chocolat"
 Ce qui donnera
 
     Trop bon ce chocolat
 
-\t permet de faire un d'espacés tous ce qui est derrière lui
+\t permet de faire un d'espacÃ©s tous ce qui est derriÃ¨re lui
 
-c'est pour ça que le "C'est" de 
+c'est pour Ã§a que le "C'est" de 
 
 C'est    beau    le    soleil 
 
-n'est pas espacés 
+n'est pas espacÃ©s 
 
 est pareil pour le "bon ce chocolat"
 
 de Trop bon ce chocolat
 
----------------------Crée des questions--------------------------------------------------------------
+---------------------CrÃ©e des questions--------------------------------------------------------------
 
-Pour crée des questions il faut faire ceci
+Pour crÃ©e des questions il faut faire ceci
 
-print "Quel age à tu ?"
-age = raw_input()         à noter que le nom de la variable peut changer selon vos gout
+print "Quel age Ã  tu ?"
+age = raw_input()         Ã  noter que le nom de la variable peut changer selon vos gout
                           c'est juste plus simple de le mettre en rapport avec la question 
                           pour mieux s'y retrouver
 
-A noter que une fois la réponse donner age = raw_input donnera la réponse donner 
-c'est pour ça que "age = raw_input"  "raw_input" représente une variable qui varie selon la réponse 
+A noter que une fois la rÃ©ponse donner age = raw_input donnera la rÃ©ponse donner 
+c'est pour Ã§a que "age = raw_input"  "raw_input" reprÃ©sente une variable qui varie selon la rÃ©ponse 
 donner 
 
 exemple
 
-print "Quel age à tu ?"
+print "Quel age Ã  tu ?"
 age = raw_input()
 
 qui me posera la question suivant 
 
-Quel age à tu
+Quel age Ã  tu
 | 
 
-en me donnant la possibilité d'écrire la réponse
+en me donnant la possibilitÃ© d'Ã©crire la rÃ©ponse
 
-Si je répond 17
+Si je rÃ©pond 17
 
 lors d'une phrase qui veut utiliser les variable des question dans l'exemple la variable "age"
 
@@ -213,9 +213,9 @@ celle ci donnera 17
 Ceci est important pour la suite
 
 
---------------------------Inclure des réponse de question dans une phrase---------------------------
+--------------------------Inclure des rÃ©ponse de question dans une phrase---------------------------
 
-Pour cela  crée en premier une question 
+Pour cela  crÃ©e en premier une question 
 
 print " quel taille fait tu"
 hauteur = raw_input()
@@ -226,7 +226,7 @@ ce qui donnera
 
 tu fait 177 en taille
 
---------------------------------d'autre manière de poser des questions--------------------------
+--------------------------------d'autre maniÃ¨re de poser des questions--------------------------
 
 Pour poser des questions plus rapidement sans utiliser le "print"
 
@@ -234,30 +234,30 @@ Il faut faire cela
 
 hauteur= raw_input("Quel taille fait tu ?")
 
----------------------------------Print "Sert à afficher un phrase à l'exception que celle ci sois dans des guillemets"
+---------------------------------Print "Sert Ã  afficher un phrase Ã  l'exception que celle ci sois dans des guillemets"
 
-# Sert à écrire une phrase dans le code sans que cela interviennent sur celui ci
+# Sert Ã  Ã©crire une phrase dans le code sans que cela interviennent sur celui ci
 
-"+" Sert à additioner, "-" Sert à soustraire, "/" Sert à divisé, "*" Sert à multiplier
-"%" Pourcent, "<" Moins que, "<=" l'égale de inférieur, ">=" égal de supérieur
+"+" Sert Ã  additioner, "-" Sert Ã  soustraire, "/" Sert Ã  divisÃ©, "*" Sert Ã  multiplier
+"%" Pourcent, "<" Moins que, "<=" l'Ã©gale de infÃ©rieur, ">=" Ã©gal de supÃ©rieur
 
 -------------------------------------------------------------------------------------------
-Crée une Variable
+CrÃ©e une Variable
 
-J'écris un mot j'écris égal avec un chiffre ou un mot dedans ou une autre variable dedans ou même
+J'Ã©cris un mot j'Ã©cris Ã©gal avec un chiffre ou un mot dedans ou une autre variable dedans ou mÃªme
 des phrases
 
 Voiture = 100 
 
 ---------Inclure les variables dans des phrases----------------
 
-Il y a 2 manière de montrer d'inclure des variables dans une phrase
+Il y a 2 maniÃ¨re de montrer d'inclure des variables dans une phrase
 
-Manière 1 : print "Il y a plus de", Voiture, " voiture dans l'entrepot."
+ManiÃ¨re 1 : print "Il y a plus de", Voiture, " voiture dans l'entrepot."
 
-Manière 2 : print "Il y a plus de %d voiture dans l'entrepot." % Voiture
+ManiÃ¨re 2 : print "Il y a plus de %d voiture dans l'entrepot." % Voiture
 
-(La manière 2 est plus simple à utiliser et permet de mettre plus facilement un nombre élevé de 
+(La maniÃ¨re 2 est plus simple Ã  utiliser et permet de mettre plus facilement un nombre Ã©levÃ© de 
 variable)
 
 Exemple :
@@ -268,13 +268,13 @@ entrepot= l'entrepot
 
 print "Il y a plus de %d voiture dans %d." % (Voiture, entrepot)
 
-sa montrera le résultat après le égale donc 100 et l'entrepot
+sa montrera le rÃ©sultat aprÃ¨s le Ã©gale donc 100 et l'entrepot
 
 Il y a plus de 100 voiture dans l'entrepot.
 
---------------------------------Print des variables et les addtioné entre elle -------------------
+--------------------------------Print des variables et les addtionÃ© entre elle -------------------
 On peut aussi print des variables avec des phrases dedans ce qui affichera la phrase
-ou additioné plusieur variable pour constituer des phrase ou autres
+ou additionÃ© plusieur variable pour constituer des phrase ou autres
 
 et si l'ont fait
 
@@ -291,7 +291,7 @@ sa affichera
 Bonjour comment va tu . 
 
 -----------------------------Afficher plusieur fois dans une phrase-----------------------------
-On peut aussi afficher plusieur fois la même chose dans un phrase avec le code suivant 
+On peut aussi afficher plusieur fois la mÃªme chose dans un phrase avec le code suivant 
 
 Print "!" * 10 
 
@@ -299,27 +299,27 @@ ce qui affichera
 
 !!!!!!!!!!
 
-----------------------Prédéfinir le nombre de chose qu'on peut mettre dans une phrase------------------------------- 
+----------------------PrÃ©dÃ©finir le nombre de chose qu'on peut mettre dans une phrase------------------------------- 
 
-Pour prédéfinir le nombre de chose affichable sur une phrase on fait une variable qui est égale au
-à d'autre variable qui définiront combien de variable peut on mettre dans une phrase
+Pour prÃ©dÃ©finir le nombre de chose affichable sur une phrase on fait une variable qui est Ã©gale au
+Ã  d'autre variable qui dÃ©finiront combien de variable peut on mettre dans une phrase
 
 en gros tu fait sa 
 
 formatter = %r %r %r %r
 
-et pour crée la phrase qui aura les paramètre prédéfini on fait 
+et pour crÃ©e la phrase qui aura les paramÃ¨tre prÃ©dÃ©fini on fait 
 
-print formatter % ("Un", "Deux", "Trois", "Quatre") on peut bien evidemment mettre des chiffre à 
+print formatter % ("Un", "Deux", "Trois", "Quatre") on peut bien evidemment mettre des chiffre Ã  
 
-la différence qu'il ne sera pas nécéssaire de mettre de guillemet car sa considère les chiffre
-appart entre eux et non mélanger comme dans une phrase 
+la diffÃ©rence qu'il ne sera pas nÃ©cÃ©ssaire de mettre de guillemet car sa considÃ¨re les chiffre
+appart entre eux et non mÃ©langer comme dans une phrase 
 
 Exemple: print formatter % (1, 2, 3, 4)
 
 ----------------Utiliser des phrase et des variables,l'espacement et les newline---------------------
 
-On va crée une variable qui va contenir une phrase ou quelque chose qui complète une phrase
+On va crÃ©e une variable qui va contenir une phrase ou quelque chose qui complÃ¨te une phrase
 
 Jour = "lundi mardi mercredi jeudi vendredi samedi dimanche"
 
@@ -329,7 +329,7 @@ print "Voici les jour de la semaine:", Jour
 
 ce qui affichera: Voici les jour de la semaine lundi mardi mercredi jeudi vendredi samedi dimanche
 
-Maintenant je vais te montrer comment faire quelque chose de plus "listé" 
+Maintenant je vais te montrer comment faire quelque chose de plus "listÃ©" 
 
 on va reprendre nos jours donc
 
@@ -359,36 +359,36 @@ samedi
 
 dimanche
 
-Le "\n" met à la ligne automatiquement tous ce qui est après lui c'est pour ça que lundi n'est pas
-à la ligne mais que les autres jours si
+Le "\n" met Ã  la ligne automatiquement tous ce qui est aprÃ¨s lui c'est pour Ã§a que lundi n'est pas
+Ã  la ligne mais que les autres jours si
 
 ------------------Mettre des guillemets simple ou double dans une chaine simple ou double---------
 
 Parfois il arrive de vouloir mettre une double guillement dans une chaine double mais sa pose
-problème car python ne s'est plus qu'elle chaine est laquelle exemple
+problÃ¨me car python ne s'est plus qu'elle chaine est laquelle exemple
 
-print "Aimerai tu "avoir" une glace" python va considérez "avoir" comme une chaine et sa fera
-une error alors pour règlez se problème il faut faire ceci
+print "Aimerai tu "avoir" une glace" python va considÃ©rez "avoir" comme une chaine et sa fera
+une error alors pour rÃ¨glez se problÃ¨me il faut faire ceci
 
-"Aimerai tu \"avoir\" une glace" et pour les chaines à simple guillemets on fait la même chose avec
+"Aimerai tu \"avoir\" une glace" et pour les chaines Ã  simple guillemets on fait la mÃªme chose avec
 les guillemets simple Exemple : 'Aimerai tu \'avoir\' une glace'
 
 Et si tu te pose la question peut ont mettre dans une phrase une guillement simple dans une chaine 
-double et une guillemet double dans une chaine simple oui car les chaine sont différente de la 
+double et une guillemet double dans une chaine simple oui car les chaine sont diffÃ©rente de la 
 guillemets mise 
 
-------------------------crée des chaines espacés et crée des phrase espacés--------------------------
+------------------------crÃ©e des chaines espacÃ©s et crÃ©e des phrase espacÃ©s--------------------------
 
-Pour crée une chaine espacés il faut faire cela Exemple :
+Pour crÃ©e une chaine espacÃ©s il faut faire cela Exemple :
 
 print """ 
-Ceci est espacés du reste du script
+Ceci est espacÃ©s du reste du script
 """
 
-ET NON CELA EXEMPLE: print """Ceci est espacés"""
+ET NON CELA EXEMPLE: print """Ceci est espacÃ©s"""
 
 
-Pour les phrases espacés il faut faire ceci 
+Pour les phrases espacÃ©s il faut faire ceci 
 
 Exemple: print "C'est\tbeau\tle\tsoleil
 
@@ -396,51 +396,51 @@ ce qui donnera
 
 C'est    beau    le    soleil 
 
-On peut le faire aussi en début de phrase pour faire des phrases décalés 
+On peut le faire aussi en dÃ©but de phrase pour faire des phrases dÃ©calÃ©s 
 
 Exemple print "\tTrop bon ce chocolat"
 Ce qui donnera
 
     Trop bon ce chocolat
 
-\t permet de faire un d'espacés tous ce qui est derrière lui
+\t permet de faire un d'espacÃ©s tous ce qui est derriÃ¨re lui
 
-c'est pour ça que le "C'est" de 
+c'est pour Ã§a que le "C'est" de 
 
 C'est    beau    le    soleil 
 
-n'est pas espacés 
+n'est pas espacÃ©s 
 
 est pareil pour le "bon ce chocolat"
 
 de Trop bon ce chocolat
 
----------------------Crée des questions--------------------------------------------------------------
+---------------------CrÃ©e des questions--------------------------------------------------------------
 
-Pour crée des questions il faut faire ceci
+Pour crÃ©e des questions il faut faire ceci
 
-print "Quel age à tu ?"
-age = raw_input()         à noter que le nom de la variable peut changer selon vos gout
+print "Quel age Ã  tu ?"
+age = raw_input()         Ã  noter que le nom de la variable peut changer selon vos gout
                           c'est juste plus simple de le mettre en rapport avec la question 
                           pour mieux s'y retrouver
 
-A noter que une fois la réponse donner age = raw_input donnera la réponse donner 
-c'est pour ça que "age = raw_input"  "raw_input" représente une variable qui varie selon la réponse 
+A noter que une fois la rÃ©ponse donner age = raw_input donnera la rÃ©ponse donner 
+c'est pour Ã§a que "age = raw_input"  "raw_input" reprÃ©sente une variable qui varie selon la rÃ©ponse 
 donner 
 
 exemple
 
-print "Quel age à tu ?"
+print "Quel age Ã  tu ?"
 age = raw_input()
 
 qui me posera la question suivant 
 
-Quel age à tu
+Quel age Ã  tu
 | 
 
-en me donnant la possibilité d'écrire la réponse
+en me donnant la possibilitÃ© d'Ã©crire la rÃ©ponse
 
-Si je répond 17
+Si je rÃ©pond 17
 
 lors d'une phrase qui veut utiliser les variable des question dans l'exemple la variable "age"
 
@@ -449,9 +449,9 @@ celle ci donnera 17
 Ceci est important pour la suite
 
 
---------------------------Inclure des réponse de question dans une phrase---------------------------
+--------------------------Inclure des rÃ©ponse de question dans une phrase---------------------------
 
-Pour cela  crée en premier une question 
+Pour cela  crÃ©e en premier une question 
 
 print " quel taille fait tu"
 hauteur = raw_input()
@@ -462,7 +462,7 @@ ce qui donnera
 
 tu fait 177 en taille
 
---------------------------------d'autre manière de poser des questions-------------------------------
+--------------------------------d'autre maniÃ¨re de poser des questions-------------------------------
 
 Pour poser des questions plus rapidement sans utiliser le "print"
 
@@ -484,9 +484,9 @@ print "ceci est le script", script       car le "from sys import argv" est une i
 
 print "ceci est le premier", variable1         l'importation n'est pas faite sa ne marchera pas 
 
-print "ceci est le deuxième", variable2        A NOTER: Avant tous lancement de script avec argument
+print "ceci est le deuxiÃ¨me", variable2        A NOTER: Avant tous lancement de script avec argument
 
-print "ceci est le troisième", variable3       il faut obligatoirement faire cela
+print "ceci est le troisiÃ¨me", variable3       il faut obligatoirement faire cela
                                              
                                                dans notre exemple  python nomduscript.py 123
 
@@ -496,44 +496,15 @@ print "ceci est le troisième", variable3       il faut obligatoirement faire cel
                                                 et lors du lancement du script sa vous affichera
 
 ceci est le script nomduscript.py
-ceci est le premier 1                           Les variable1,variable2,variable3 ont été remplacé
-ceci est le deuxième 2                          lors du lancement du script par les argument qui ont                           
-ceci est le troisième 3                         été écrit lors du lancement du script 
+ceci est le premier 1                           Les variable1,variable2,variable3 ont Ã©tÃ© remplacÃ©
+ceci est le deuxiÃ¨me 2                          lors du lancement du script par les argument qui ont                           
+ceci est le troisiÃ¨me 3                         Ã©tÃ© Ã©crit lors du lancement du script 
                                                 "python nomduscript.py 123" 
       
-                                                 et les variable1,2,3 ont changé par les argument du
+                                                 et les variable1,2,3 ont changÃ© par les argument du
                                                  qui suivait la commande de lancement mais la seul qui
                                                  est semi-fixe est la variable script qui de plus est
                                                  OBLIGATOIRE pour tous script avec argument dedans
                                                  le seul moment on le nom de la variable script change
                                                  c'est quand vous changez de script et rien d'autre
---------------------------------------------------------------------------------------------------------- 
-
-                                          
-
-
-
-
-
-
-
-
-               
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------
