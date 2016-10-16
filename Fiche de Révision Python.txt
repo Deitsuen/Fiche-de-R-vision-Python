@@ -507,4 +507,4 @@ ceci est le troisième 3                         été écrit lors du lancement 
                                                  OBLIGATOIRE pour tous script avec argument dedans
                                                  le seul moment on le nom de la variable script change
                                                  c'est quand vous changez de script et rien d'autre
-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
