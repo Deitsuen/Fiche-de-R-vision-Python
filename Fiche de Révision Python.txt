@@ -508,6 +508,45 @@ ceci est le troisième 3                         été écrit lors du lancement 
                                                  c'est quand vous changez de script et rien d'autre
                                                  
                                                  Pour ceux qui se posent la question oui on peut mettre des variables d'arguments
-                                                 dans des phrases de la même façon que de mettre des variable normale
+                                                 dans des phrases de la même façon que de mettre des variable normale mais il changeront
+                                                 selon ce que vous mettez au lancement du script
 
-----------------------------------------Mettre des variables d'arguments dans des phrases-----------------------------------------------
+----------------------------------------Mettre des variables dans des questions-----------------------------------------------
+
+Pour faire cela il faut faire
+
+Test = ou pense tu que cette une question ?
+
+Exemple : 
+
+print "pense tu que c'est un exemple ?"
+exemple = raw_input(Test)
+
+ce qui affichera
+
+Pense tu que c'est un exemple ?
+ou pense tu que cette une question ? |               (le "|" veut représenter la barre qui clignote qui vous permet d'écrire la réponse)
+
+
+autre exemple avec un symbole
+
+Test = '> '                          (L'espace dans les guillemet permet d'espacés le symbole de la réponse sans espace sa marche aussi)
+
+print "pense tu qu'il y a un symbole ici ?"
+symbole = raw_input(Test)
+
+ce qui affichera
+
+pense tu qu'il y a un symbole ici ?
+> |
+
+on peut aussi directement mettre un symbole dans le raw_input mais pas une phrase car sa transformerai le raw input en "question"
+
+Bref 
+
+Exemple:
+
+print "Ceci est une phrase."
+phrase = raw_input('> ')          
+
+----------------------------------------------------------------------------------------------------------------------------------------
