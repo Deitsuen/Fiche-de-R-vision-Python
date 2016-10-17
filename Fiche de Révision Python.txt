@@ -555,4 +555,33 @@ Exemple:
 print "Ceci est une phrase."
 phrase = raw_input('> ')          
 
+---------------------------------------------------Savoir lire des fichiers-------------------------------------------------------------
+
+Pour faire cela il faut obligatoirement crée un fichier avec des arguments donc pour se faire 
+
+Exemple:
+
+from sys import argv
+
+script, filename = argv                            (objet=descripteur de fichier tous ce qui permet de décrire un fichier Exemple: open)
+
+txt = open(filename)                                (On peut aussi crée des variable avec des objet python qui intéragissent avec les 
+                                                     fichier ce qui permet de faire interagir un fichier dans un autre)
+Et pour lire le fichier il faut faire ceci               
+
+print txt.read
+
+Et lors du lancement du script il faudra mettre le nom du fichier à lire 
+
+Exemple 
+
+python exemple.py test.txt
+
+Ceci est un test                      (Sa à afficher le fichier test.txt dans exemple.py on aurai pu aussi mettre un fichier .py ou 
+                                      autre sa l'aurai aussi afficher de la même manière)
+
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
