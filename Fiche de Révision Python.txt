@@ -569,7 +569,7 @@ txt = open(filename)                                (On peut aussi crée des var
                                                      fichier ce qui permet de faire interagir un fichier dans un autre)
 Et pour lire le fichier il faut faire ceci               
 
-print txt.read
+print txt.read()
 
 Et lors du lancement du script il faudra mettre le nom du fichier à lire 
 
@@ -580,8 +580,46 @@ python exemple.py test.txt
 Ceci est un test                      (Sa à afficher le fichier test.txt dans exemple.py on aurai pu aussi mettre un fichier .py ou 
                                       autre sa l'aurai aussi afficher de la même manière)
 
+---------------------------------------------Savoir écrire dans un fichier--------------------------------------------------------------
+Pour écrire dans un fichier il faut faire cela
+
+Exemple:
+
+from sys import argv
+
+script, filename = argv
+
+fichier = open(filename)
+
+maintenant on va écrire plusieur ligne 
+
+ligne1 = raw_input("ligne1: ")
+ligne2 = raw_input("ligne2: ")
+ligne3 = raw_input("ligne3: ")
+
+sa affichera les questions les unes après les autres
+
+ligne1: |
+ligne2: |                            
+ligne3: |
+
+vous écrivez ensuite ceci:
+
+ouverture.write(ligne1)
+ouverture.write(ligne2)         ce qui va permettre d'écrire les réponses que vous avez donné lors des questions dans le fichier cible 
+ouverture.write(ligne3)         configuré lors du lancement du script
+
+
+IMPORTANT si vous voulez mettre plusieur ligne  dans un texte ciblé je vous recommande
+de faire ceci
+
+ouverture.write(ligne1)
+ouverture.write("\n")
+ouverture.write(ligne2)
+ouverture.write("\n")
+ouverture.write(ligne3)
+ouverture.write("\n")
+
+Cela va faire des espaces entre les lignes important si vous voulez écrire plusieur ligne espacés entre elle de façon "listé"
+
 ----------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
