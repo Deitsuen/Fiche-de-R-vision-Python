@@ -5,8 +5,7 @@ Print "Sert à afficher un phrase à l'exception que celle ci sois dans des guil
 "+" Sert à additioner, "-" Sert à soustraire, "/" Sert à divisé, "*" Sert à multiplier
 "%" Pourcent, "<" Moins que, "<=" l'égale de inférieur, ">=" égal de supérieur
 
--------------------------------------------------------------------------------------------
-Crée une Variable
+------------------------------Crée une Variable---------------------------------------
 
 J'écris un mot j'écris égal avec un chiffre ou un mot dedans ou une autre variable dedans ou même
 des phrases
