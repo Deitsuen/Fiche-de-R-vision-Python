@@ -1,3 +1,9 @@
+----------------------------------------------------------------------------------------
+# Author: Adam Bouadil "Deitsuen" <adamb27750@orange.fr> all rights reserved
+----------------------------------------------------------------------------------------
+
+
+------------------------------------Définitions---------------------------------------
 Print "Sert à afficher un phrase à l'exception que celle ci sois dans des guillemets"
 
 # Sert à écrire une phrase dans le code sans que cela interviennent sur celui ci
