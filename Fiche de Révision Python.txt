@@ -506,4 +506,8 @@ ceci est le troisième 3                         été écrit lors du lancement 
                                                  OBLIGATOIRE pour tous script avec argument dedans
                                                  le seul moment on le nom de la variable script change
                                                  c'est quand vous changez de script et rien d'autre
------------------------------------------------------------------------------------------------------------------------------------
+                                                 
+                                                 Pour ceux qui se posent la question oui on peut mettre des variables d'arguments
+                                                 dans des phrases de la même façon que de mettre des variable normale
+
+----------------------------------------Mettre des variables d'arguments dans des phrases-----------------------------------------------
