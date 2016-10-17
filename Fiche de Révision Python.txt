@@ -6,7 +6,7 @@
 ------------------------------------Définitions---------------------------------------
 Print "Sert à afficher un phrase à l'exception que celle ci sois dans des guillemets"
 
-# Sert à écrire une phrase dans le code sans que cela interviennent sur celui ci
+# Sert à commenter le code sans que cela interviennent sur celui ci
 
 "+" Sert à additioner, "-" Sert à soustraire, "/" Sert à divisé, "*" Sert à multiplier
 "%" Pourcent, "<" Moins que, "<=" l'égale de inférieur, ">=" égal de supérieur
@@ -311,7 +311,7 @@ Pour prédéfinir le nombre de chose affichable sur une phrase on fait une varia
 
 en gros tu fait sa 
 
-formatter = %r %r %r %r
+format = %r %r %r %r
 
 et pour crée la phrase qui aura les paramètre prédéfini on fait 
 
@@ -322,7 +322,7 @@ appart entre eux et non mélanger comme dans une phrase
 
 Exemple: print formatter % (1, 2, 3, 4)
 
-----------------Utiliser des phrase et des variables,l'espacement et les newline---------------------
+----------------Utiliser des phrase et des variables et les newline--------------------------------------
 
 On va crée une variable qui va contenir une phrase ou quelque chose qui complète une phrase
 
