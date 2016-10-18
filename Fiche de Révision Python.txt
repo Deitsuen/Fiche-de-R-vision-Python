@@ -408,6 +408,22 @@ open.write(lecture)
 
 #sinon pour décrire "open" ouvre le fichier sortie et open.write écris dans le fichier de sortie ce qui est contenue dans la variable entre paranthèse dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable ouverture et dans cette variable il est contenue le fichier d'entrée et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au fichier de sortie.
 
-----------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------Crée des Fonctions----------------------------------------------------------------------
+#Pour crée des fonctions il faut faire ceci
 
+#Ceci est l'équivalent des script avec "argv"
+def Deux_args(*args):
+    arg1, arg2 = args
+print "argument1: %r , argument2: %r" % (arg1, arg2)
+
+def Deux_args_encore(arg1, arg2) #Ici on determine combien il y aura d'argument dans la fonctions
+    print"cette phrase contient l'argument %r et l'argument %r" %(arg1, arg2)
+    
+def Un_args(arg1) #Un seul argument
+print"Il n'y qu'un seul argument c'est le %r" %(arg1)
+
+def Zero_args() #Pas d'argument
+print"il n'y a pas d'arguments ici"
+    
+----------------------------------------------------------------------------------------------------------------------------------------
 
