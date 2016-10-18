@@ -249,9 +249,9 @@ Exemple:
 
 from sys import argv               Alors il est obligatoire de mettre le "from sys import argv" 
 
-script,variable1,variable2,variable3 = argv        Sinon les variable  script, variable1, variable2, variable3 = argv
-
-print "ceci est le script", script       car le "from sys import argv" est une importation si  
+script,variable1,variable2,variable3 = argv        Sinon les variable  script, variable1, variable2, variable3 = argv 
+                                                   ne marcheront pas
+ print "ceci est le script", script                car le "from sys import argv" est une importation si  
 
 print "ceci est le premier", variable1         l'importation n'est pas faite sa ne marchera pas 
 
@@ -295,12 +295,12 @@ exemple = raw_input(Test)
 ce qui affichera
 
 Pense tu que c'est un exemple ?
-ou pense tu que cette une question ? |               (le "|" veut représenter la barre qui clignote qui vous permet d'écrire la réponse)
+ou pense tu que cette une question ? |             #(le "|" veut représenter la barre qui clignote qui vous permet d'écrire la réponse)
 
 
 autre exemple avec un symbole
 
-Test = '> '                          (L'espace dans les guillemet permet d'espacés le symbole de la réponse sans espace sa marche aussi)
+Test = '> '                        #(L'espace dans les guillemet permet d'espacés le symbole de la réponse sans espace sa marche aussi)
 
 print "pense tu qu'il y a un symbole ici ?"
 symbole = raw_input(Test)
@@ -310,7 +310,7 @@ ce qui affichera
 pense tu qu'il y a un symbole ici ?
 > |
 
-on peut aussi directement mettre un symbole dans le raw_input mais pas une phrase car sa transformerai le raw input en "question"
+#on peut aussi directement mettre un symbole dans le raw_input mais pas une phrase car sa transformerai le raw input en "question"
 
 Bref 
 
@@ -327,11 +327,11 @@ Exemple:
 
 from sys import argv
 
-script, filename = argv                            (objet=descripteur de fichier tous ce qui permet de décrire un fichier Exemple: open)
+script, filename = argv                           #(objet=descripteur de fichier tous ce qui permet de décrire un fichier Exemple: open)
 
-txt = open(filename)                                (On peut aussi crée des variable avec des objet python qui intéragissent avec les 
-                                                     fichier ce qui permet de faire interagir un fichier dans un autre)
-Et pour lire le fichier il faut faire ceci               
+txt = open(filename)                                #(On peut aussi crée des variable avec des objet python qui intéragissent avec les 
+                                                     #fichier ce qui permet de faire interagir un fichier dans un autre)
+#Et pour lire le fichier il faut faire ceci               
 
 print txt.read()
 
@@ -355,13 +355,13 @@ script, filename = argv
 
 ouverture = open(filename)
 
-maintenant on va écrire plusieur ligne 
+#maintenant on va écrire plusieur ligne 
 
 ligne1 = raw_input("ligne1: ")
 ligne2 = raw_input("ligne2: ")
 ligne3 = raw_input("ligne3: ")
 
-sa affichera les questions les unes après les autres
+#sa affichera les questions les unes après les autres
 
 ligne1: |
 ligne2: |                            
@@ -370,12 +370,12 @@ ligne3: |
 vous écrivez ensuite ceci:
 
 ouverture.write(ligne1)
-ouverture.write(ligne2)         ce qui va permettre d'écrire les réponses que vous avez donné lors des questions dans le fichier cible 
-ouverture.write(ligne3)         configuré lors du lancement du script
+ouverture.write(ligne2)         #ce qui va permettre d'écrire les réponses que vous avez donné lors des questions dans le fichier cible 
+ouverture.write(ligne3)         #configuré lors du lancement du script
 
 
-IMPORTANT si vous voulez mettre plusieur ligne  dans un texte ciblé je vous recommande
-de faire ceci
+#IMPORTANT si vous voulez mettre plusieur ligne  dans un texte ciblé je vous recommande
+#de faire ceci
 
 ouverture.write(ligne1)
 ouverture.write("\n")
@@ -386,4 +386,28 @@ ouverture.write("\n")
 
 Cela va faire des espaces entre les lignes important si vous voulez écrire plusieur ligne espacés entre elle de façon "listé"
 
+---------------------------------------------écrire le contenu d'un fichier à un autre--------------------------------------------------
+
+Pour faire cela il faut crée un script à argv
+
+from sys import argv
+
+script, envoyeur, destinataire = argv
+
+ouverture = open(envoyeur)
+lecture = ouverture.read()
+
+#La on a assigné l'objet "open" envoyeur on a assigné l'objet read à sa variable "ouverture"
+on passe à la suite
+
+
+open = open(destinataire)
+open.write(lecture)
+
+#Ici on peut constater que l'objet "write" est utilisé pour écrire ce qui est contenue dans lecture à noter que le contenue du fichier
+
+#sinon pour décrire "open" ouvre le fichier sortie et open.write écris dans le fichier de sortie ce qui est contenue dans la variable entre paranthèse dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable ouverture et dans cette variable il est contenue le fichier d'entrée et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au fichier de sortie.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+
