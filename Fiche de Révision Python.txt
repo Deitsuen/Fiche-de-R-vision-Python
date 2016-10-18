@@ -453,7 +453,7 @@ exemple2 = 15
 exemple3 = 20
 exemple4 = 30
 
-Test(exemple1, exemple2)
+Test(exemple1, exemple2, exemple3, exemple4)
 
 print "on va maintenant faire des maths dans la fonction"
 Test(10 + 15, 17 + 10, 10 + 15, 8 + 2 + 2 + 4 + 2 )
