@@ -272,9 +272,7 @@ ceci est le deuxième 2                          lors du lancement du script par
 ceci est le troisième 3                         été écrit lors du lancement du script 
                                                 "python nomduscript.py 123" 
       
-                                                 et les variable1,2,3 ont changé par les argument du
-                                                 qui suivait la commande de lancement mais la seul qui
-                                                 est semi-fixe est la variable script qui de plus est
+                                                 mais la seul qui est semi-fixe est la variable script qui de plus est
                                                  OBLIGATOIRE pour tous script avec argument dedans
                                                  le seul moment on le nom de la variable script change
                                                  c'est quand vous changez de script et rien d'autre
@@ -287,7 +285,7 @@ ceci est le troisième 3                         été écrit lors du lancement 
 
 Pour faire cela il faut faire
 
-Test = ou pense tu que cette une question ?
+Test =  pense tu que cette une question ?
 
 Exemple : 
 
@@ -355,7 +353,7 @@ from sys import argv
 
 script, filename = argv
 
-fichier = open(filename)
+ouverture = open(filename)
 
 maintenant on va écrire plusieur ligne 
 
