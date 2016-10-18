@@ -408,7 +408,7 @@ open.write(lecture)
 
 #sinon pour décrire "open" ouvre le fichier sortie(destinataire) et open.write écris dans le fichier de sortie ce qui est contenue dans #la variable entre () dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable "ouverture" et dans cette #variable il est contenue le fichier d'entrée (envoyeur)et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au #fichier de sortie.
 
-------------------------------------------------Crée des Fonctions----------------------------------------------------------------------
+------------------------------------------------Crée des Fonctions--------------------------------------------------------------
 #Pour crée des fonctions il faut faire ceci
 
 #Ceci est l'équivalent des script avec "argv"
@@ -436,27 +436,30 @@ print Zero_args()
 # à NOTER qu'il nest pas nécéssaire d'écrire à chaque fois tous les arguments de déballage qui sont dans Deux_args
 #On peut simplement écrire nos arguments comme dans Deux_args_encore
 
------------------------------------------------Fonctions et Mathématique----------------------------------------------------------------
+-----------------------------------------------Fonctions et Mathématique--------------------------------------------------------
 
-def Test(test1, test2):
+def Test(test1, test2, test3, test4):
     print "Il fait %d ajourd'hui et il fera %d demain" % (test1, test2)
-    print "tu a raison il fait %d ajourd'hui mais demain je pense qu'il fera %d" % (test1, test2)
-    print "On verra ça demain"
-    
+    print "tu a raison il fait %d ajourd'hui mais demain je pense qu'il fera %d" % (test3, test4)
+    print "On verra ca demain"
+
+
 print "Ceci est une utilisation de fonction dans des phrases"
 Test(25, 20, 25, 19)
 
 print "On peut aussi utiliser les variables de script"
 exemple1 = 20
 exemple2 = 15
+exemple3 = 20
+exemple4 = 30
 
 Test(exemple1, exemple2)
 
 print "on va maintenant faire des maths dans la fonction"
-Test(5 + 15, 40 + 50)
+Test(10 + 15, 17 + 10, 10 + 15, 8 + 2 + 2 + 4 + 2 )
 
 print "On va maintenant faire des maths avec nos variable et des chiffres)
-Test(exemple1 +40, exemple2 + 60)
+Test(exemple1 + 15, exemple2 + 25, exemple3 + 15, exemple4 + 3)
 
-    
+-------------------------------------------------------------------------------------------------------------------------------- 
 
