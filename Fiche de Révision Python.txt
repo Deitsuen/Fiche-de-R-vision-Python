@@ -319,7 +319,7 @@ Exemple:
 print "Ceci est une phrase."
 phrase = raw_input('> ')          
 
----------------------------------------------------Savoir lire des fichiers-------------------------------------------------------------
+---------------------------------------------------Savoir lire des fichiers-----------------------------------------------------
 
 Pour faire cela il faut obligatoirement crée un fichier avec des arguments donc pour se faire 
 
@@ -344,7 +344,7 @@ python exemple.py test.txt
 Ceci est un test                      (Sa à afficher le fichier test.txt dans exemple.py on aurai pu aussi mettre un fichier .py ou 
                                       autre sa l'aurai aussi afficher de la même manière)
 
----------------------------------------------Savoir écrire dans un fichier--------------------------------------------------------------
+---------------------------------------------Savoir écrire dans un fichier ----------------------------------------------------
 Pour écrire dans un fichier il faut faire cela
 
 Exemple:
@@ -386,7 +386,7 @@ ouverture.write("\n")
 
 Cela va faire des espaces entre les lignes important si vous voulez écrire plusieur ligne espacés entre elle de façon "listé"
 
----------------------------------------------écrire le contenu d'un fichier à un autre--------------------------------------------------
+---------------------------------------------écrire le contenu d'un fichier à un autre-----------------------------------------
 
 Pour faire cela il faut crée un script à argv
 
@@ -401,7 +401,7 @@ lecture = ouverture.read()
 #on passe à la suite
 
 
-open = open(destinataire)
+open = open(destinataire)          #Pour lancer le script il faut faire: python nomduscript.py fichier_d'entrée fichier_sortie
 open.write(lecture)
 
 #Ici on peut constater que l'objet "write" est utilisé pour écrire ce qui est contenue dans lecture
