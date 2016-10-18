@@ -75,7 +75,7 @@ Pour prédéfinir le nombre de chose affichable sur une phrase on fait une varia
 
 en gros tu fait sa 
 
-formatter = %r %r %r %r
+format = %r %r %r %r
 
 et pour crée la phrase qui aura les paramètre prédéfini on fait 
 
@@ -84,7 +84,7 @@ print formatter % ("Un", "Deux", "Trois", "Quatre") on peut bien evidemment mett
 la différence qu'il ne sera pas nécéssaire de mettre de guillemet car sa considère les chiffre
 appart entre eux et non mélanger comme dans une phrase 
 
-Exemple: print formatter % (1, 2, 3, 4)
+Exemple: print format % (1, 2, 3, 4)
 
 ----------------Utiliser des phrase et des variables,l'espacement et les newline---------------------
 
