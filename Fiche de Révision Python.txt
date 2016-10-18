@@ -424,6 +424,17 @@ print"Il n'y qu'un seul argument c'est le %r" %(arg1)
 
 def Zero_args() #Pas d'argument
 print"il n'y a pas d'arguments ici"
-    
+
+print Deux_args(1,2)
+print Deux_args_encore(1,2)
+print Un_args(1)
+print Zero_args()
+
+#Ceci va print les phrases et remplacé les fonctions args1 et args 2 
+#par ce que vous avec écrit entre les "()" 
+
+# à NOTER qu'il nest pas nécéssaire d'écrire à chaque fois tous les arguments de déballage qui sont dans Deux_args
+#On peut simplement écrire nos arguments comme dans Deux_args_encore
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
