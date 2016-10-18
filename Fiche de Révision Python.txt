@@ -249,7 +249,7 @@ Exemple:
 
 from sys import argv               Alors il est obligatoire de mettre le "from sys import argv" 
 
-script,Un,Deux,Trois = argv        Sinon les variable  script, variable1, variable2, variable3 = argv
+script,variable1,variable2,variable3 = argv        Sinon les variable  script, variable1, variable2, variable3 = argv
 
 print "ceci est le script", script       car le "from sys import argv" est une importation si  
 
