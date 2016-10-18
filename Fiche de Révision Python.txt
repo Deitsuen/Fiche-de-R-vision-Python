@@ -397,16 +397,16 @@ script, envoyeur, destinataire = argv
 ouverture = open(envoyeur)
 lecture = ouverture.read()
 
-#La on a assigné l'objet "open" envoyeur on a assigné l'objet read à sa variable "ouverture"
-on passe à la suite
+#La on a assigné l'objet "open" au fichier d'entrée "envoyeur" on a assigné l'objet "read" à sa variable "ouverture"
+#on passe à la suite
 
 
 open = open(destinataire)
 open.write(lecture)
 
-#Ici on peut constater que l'objet "write" est utilisé pour écrire ce qui est contenue dans lecture à noter que le contenue du fichier
+#Ici on peut constater que l'objet "write" est utilisé pour écrire ce qui est contenue dans lecture
 
-#sinon pour décrire "open" ouvre le fichier sortie et open.write écris dans le fichier de sortie ce qui est contenue dans la variable entre paranthèse dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable ouverture et dans cette variable il est contenue le fichier d'entrée et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au fichier de sortie.
+#sinon pour décrire "open" ouvre le fichier sortie(destinataire) et open.write écris dans le fichier de sortie ce qui est contenue dans #la variable entre () dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable "ouverture" et dans cette #variable il est contenue le fichier d'entrée (envoyeur)et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au #fichier de sortie.
 
 ------------------------------------------------Crée des Fonctions----------------------------------------------------------------------
 #Pour crée des fonctions il faut faire ceci
@@ -436,5 +436,27 @@ print Zero_args()
 # à NOTER qu'il nest pas nécéssaire d'écrire à chaque fois tous les arguments de déballage qui sont dans Deux_args
 #On peut simplement écrire nos arguments comme dans Deux_args_encore
 
-----------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------Fonctions et Mathématique----------------------------------------------------------------
+
+def Test(test1, test2):
+    print "Il fait %d ajourd'hui et il fera %d demain" % (test1, test2)
+    print "tu a raison il fait %d ajourd'hui mais demain je pense qu'il fera %d" % (test1, test2)
+    print "On verra ça demain"
+    
+print "Ceci est une utilisation de fonction dans des phrases"
+Test(25, 20, 25, 19)
+
+print "On peut aussi utiliser les variables de script"
+exemple1 = 20
+exemple2 = 15
+
+Test(exemple1, exemple2)
+
+print "on va maintenant faire des maths dans la fonction"
+Test(5 + 15, 40 + 50)
+
+print "On va maintenant faire des maths avec nos variable et des chiffres)
+Test(exemple1 +40, exemple2 + 60)
+
+    
 
