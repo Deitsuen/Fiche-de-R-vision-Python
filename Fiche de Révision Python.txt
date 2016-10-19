@@ -461,5 +461,49 @@ Test(10 + 15, 17 + 10, 10 + 15, 8 + 2 + 2 + 4 + 2 )
 print "On va maintenant faire des maths avec nos variable et des chiffres)
 Test(exemple1 + 15, exemple2 + 25, exemple3 + 15, exemple4 + 3)
 
--------------------------------------------------------------------------------------------------------------------------------- 
+------------------------------------------------Fonctions et Fichiers-------------------------------------------------------------------
+
+On va apprendre à utiliser des fonctions pour manipuler des fichiers pour cela
+
+Exemple:
+
+from sys import argv
+script, Fichier_cible = argv
+
+def print_all(f)        # le "print_all" va afficher en intégralité le fichier cible"
+    print f.read()
+
+def rewind(f)           # Le "rewind" va remettre à zéro le listing(défilement) des lignes dans le script"
+    f.seek(0)
+    
+def print_a_line(line_count, f):     # le "print_a_line" va print un numéro sur une ligne et va l'afficher important d'utiliser un
+    print line_count, f.readline()     # un "rewind" avant l'utilisation du "print_a_line" si vous voulez numéroté vos lignes
+    
+Fichier_cible = open (Fichier_cible)    # On crée une variable pour ouvrir notre "Fichier_cible"
+
+print "On va print l'ensemble du fichier"
+
+print_all(input_file)
+
+print "On remet à zéro le listing"    
+
+rewind(Fichier_cible)
+
+print "Maintenant on va numéroté trois lignes"
+
+Fichier_cible = 1                            # Ici on crée un variable qui est égal à 1
+print_a_line(current_line, Fichier_cible)    # Ici ça va numéroter la ligne selon le listing avec le numéro de la variable Fichier_cible
+
+Fichier_cible = Fichier_cible + 1           # Pour faire simple Fichier_cible = 1   donc 1 + 1 = 2
+print_a_line(current_line, Fichier_cible)   # Donc la numérotation de cette ligne sera 2
+
+Fichier_cible = Fichier_cible + 1           # Du au précédente addition le Fichier_cible est égal à 2 donc 2 + 1 = 3
+print_a_line(current_line, Fichier_cible)   #  Et ici la numérotation sera 3
+
+
+#Et pour lancer le script il faut faire "python nom_du_script.py nom_du_fichier_cible.py" sinon sa ne marchera pas
+    
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
 
