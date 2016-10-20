@@ -506,17 +506,17 @@ print_a_line(current_line, Ouverture)   #  Et ici la numérotation sera 3
 -------------------------------Fonction et la commande "return"-------------------------------------------------------------
 
 def add(a, b):
-    print"ADDITIONE %d + %d" % (a, b) #Alors ici on va additioner a+b
-    return a + b # On la commande "return" qui elle va retourner  a l'addition de a+b d'en haut
-                 # lors du lancement du script avec add/subtract/etc python remplacera a + b/a - b /etc  par les chiffre
-def subtract(a, b):                     # et sera en mesure de donner les resultat de cette addition/soustraction/etc
-    print "SOUSTRAIRE %d - %d" % (a, b)
-    return a - b
-
-def multiply(a, b):
-    print"MULTIPLIER %d * %d" % (a, b)
-    return a * b
-
+    print"ADDITIONER %d + %d" % (a, b)  #Alors ici sa va print "ADDITIONER" lors d'une addition avec a + b
+    return a + b                        # On a la commande "return" qui elle va retourner a l'addition de a+b d'en haut
+                                        # lors du lancement du script avec add/subtract/etc 
+def subtract(a, b):                     # python remplacera a + b / a - b /etc par les chiffre demander
+ print "SOUSTRAIRE %d - %d" % (a, b)    # pour afficher un résultat de "add" il faut faire ceci "résultat = add (1, 3)"
+    return a - b                        # et inclure la variable "résultat" dans une phrase   
+                                        # EXEMPLE
+def multiply(a, b):                     # add (2, 4)    ce qui affichera:  ADDITIONER 2 + 4
+    print"MULTIPLIER %d * %d" % (a, b)  # résultat = add (1, 3)     ce qui affichera: ADDITIONER 1+3
+    return a * b                        # print "J'ai %d ans" % résultat
+                                        # ce qui affichera: J'ai 4 ans
 def divide(a, b):
     print "DIVISE %d / %d" % (a, b)
     return a / b
@@ -553,3 +553,4 @@ print "normalement le resultat est",what, "appart si vous avez modifier ;)"
 
 # age,taille,poids,pointure sa peut radicalement changer selon ce que vous mettez
 
+----------------------------------------------------------------------------------------------------------------------------------------
