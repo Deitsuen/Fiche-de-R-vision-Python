@@ -479,7 +479,7 @@ def rewind(f)           # Le "rewind" va remettre à zéro le listing(défilemen
 def print_a_line(line_count, f):     # le "print_a_line" va print un numéro sur une ligne et va l'afficher important d'utiliser un
     print line_count, f.readline()     # un "rewind" avant l'utilisation du "print_a_line" si vous voulez numéroté vos lignes
     
-Fichier_cible = open (Fichier_cible)    # On crée une variable pour ouvrir notre "Fichier_cible"
+Ouverture = open (Fichier_cible)    # On crée une variable pour ouvrir notre "Fichier_cible"
 
 print "On va print l'ensemble du fichier"
 
@@ -492,13 +492,13 @@ rewind(Fichier_cible)
 print "Maintenant on va numéroté trois lignes"
 
 Fichier_cible = 1                            # Ici on crée un variable qui est égal à 1
-print_a_line(current_line, Fichier_cible)    # Ici ça va numéroter la ligne selon le listing avec le numéro de la variable Fichier_cible
+print_a_line(current_line, Ouverture)    # Ici ça va numéroter la ligne selon le listing avec le numéro de la variable Fichier_cible
 
 Fichier_cible = Fichier_cible + 1           # Pour faire simple Fichier_cible = 1   donc 1 + 1 = 2
-print_a_line(current_line, Fichier_cible)   # Donc la numérotation de cette ligne sera 2
+print_a_line(current_line, Ouverture)   # Donc la numérotation de cette ligne sera 2
 
 Fichier_cible = Fichier_cible + 1           # Du au précédente addition le Fichier_cible est égal à 2 donc 2 + 1 = 3
-print_a_line(current_line, Fichier_cible)   #  Et ici la numérotation sera 3
+print_a_line(current_line, Ouverture)   #  Et ici la numérotation sera 3
 
 
 #Et pour lancer le script il faut faire "python nom_du_script.py nom_du_fichier_cible.py" sinon sa ne marchera pas
