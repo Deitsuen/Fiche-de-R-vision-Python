@@ -491,13 +491,13 @@ rewind(Fichier_cible)
 
 print "Maintenant on va numéroté trois lignes"
 
-Fichier_cible = 1                            # Ici on crée un variable qui est égal à 1
-print_a_line(current_line, Ouverture)    # Ici ça va numéroter la ligne selon le listing avec le numéro de la variable Fichier_cible
+Numérotation = 1                            # Ici on crée un variable qui est égal à 1
+print_a_line(current_line, Ouverture)    # Ici ça va numéroter la ligne selon le listing avec le numéro de la variable "Numérotation"
 
-Fichier_cible = Fichier_cible + 1           # Pour faire simple Fichier_cible = 1   donc 1 + 1 = 2
+Numérotation = Numérotation + 1           # Pour faire simple Numérotation = 1   donc 1 + 1 = 2
 print_a_line(current_line, Ouverture)   # Donc la numérotation de cette ligne sera 2
 
-Fichier_cible = Fichier_cible + 1           # Du au précédente addition le Fichier_cible est égal à 2 donc 2 + 1 = 3
+Numérotation = Numérotation + 1           # Du au précédente addition la variable "Numérotation" est égal à 2 donc 2 + 1 = 3
 print_a_line(current_line, Ouverture)   #  Et ici la numérotation sera 3
 
 
