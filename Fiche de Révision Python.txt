@@ -392,21 +392,21 @@ Pour faire cela il faut crée un script à argv
 
 from sys import argv
 
-script, envoyeur, destinataire = argv
+script, from_file, to_file = argv        #from_file est le fichier "d'entrée"  to_file est le fichier de "sortie"
 
-ouverture = open(envoyeur)
+ouverture = open(from_file)
 lecture = ouverture.read()
 
 #La on a assigné l'objet "open" au fichier d'entrée "envoyeur" on a assigné l'objet "read" à sa variable "ouverture"
 #on passe à la suite
 
 
-open = open(destinataire)          #Pour lancer le script il faut faire: python nomduscript.py fichier_d'entrée fichier_sortie
+open = open(to_file)          #Pour lancer le script il faut faire: python nomduscript.py fichier_d'entrée fichier_sortie
 open.write(lecture)
 
 #Ici on peut constater que l'objet "write" est utilisé pour écrire ce qui est contenue dans lecture
 
-#sinon pour décrire "open" ouvre le fichier sortie(destinataire) et open.write écris dans le fichier de sortie ce qui est contenue dans #la variable entre () dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable "ouverture" et dans cette #variable il est contenue le fichier d'entrée (envoyeur)et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au #fichier de sortie.
+#sinon pour décrire "open" ouvre le fichier sortie(to_file) et open.write écris dans le fichier de sortie ce qui est contenue dans #la variable entre () dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable "ouverture" et dans cette #variable il est contenue le fichier d'entrée (from_file)et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au #fichier de sortie.
 
 ------------------------------------------------Crée des Fonctions--------------------------------------------------------------
 #Pour crée des fonctions il faut faire ceci
