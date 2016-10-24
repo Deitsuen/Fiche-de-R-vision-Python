@@ -468,9 +468,9 @@ On va apprendre à utiliser des fonctions pour manipuler des fichiers pour cela
 Exemple:
 
 from sys import argv
-script, Fichier_cible = argv
+script, input_file = argv
 
-def print_all(f)        # le "print_all" va afficher en intégralité le fichier cible"
+def print_all(f)        # le "print_all" va afficher en intégralité le input_file"
     print f.read()
 
 def rewind(f)           # Le "rewind" va remettre à zéro le listing(défilement) des lignes dans le script"
@@ -479,7 +479,7 @@ def rewind(f)           # Le "rewind" va remettre à zéro le listing(défilemen
 def print_a_line(line_count, f):     # le "print_a_line" va print un numéro sur une ligne et va l'afficher important d'utiliser un
     print line_count, f.readline()     # un "rewind" avant l'utilisation du "print_a_line" si vous voulez numéroté vos lignes
     
-Ouverture = open (Fichier_cible)    # On crée une variable pour ouvrir notre "Fichier_cible"
+Ouverture = open (input_file)    # On crée une variable pour ouvrir notre "Fichier_cible"
 
 print "On va print l'ensemble du fichier"
 
@@ -487,7 +487,7 @@ print_all(input_file)
 
 print "On remet à zéro le listing"    
 
-rewind(Fichier_cible)
+rewind(input_file)
 
 print "Maintenant on va numéroté trois lignes"
 
