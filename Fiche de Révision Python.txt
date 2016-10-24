@@ -41,7 +41,7 @@ sa montrera le résultat après le égale donc 100 et l'entrepot
 
 Il y a plus de 100 voiture dans l'entrepot.
 
---------------------------------Print des variables et les addtioné entre elle -------------------
+--------------------------------Print des variables et les additioné entre elle -------------------
 On peut aussi print des variables avec des phrases dedans ce qui affichera la phrase
 ou additioné plusieur variable pour constituer des phrase ou autres
 
