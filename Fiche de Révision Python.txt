@@ -479,7 +479,7 @@ def rewind(f)           # Le "rewind" va remettre à zéro le listing(défilemen
 def print_a_line(line_count, f):     # le "print_a_line" va print un numéro sur une ligne et va l'afficher important d'utiliser un
     print line_count, f.readline()     # un "rewind" avant l'utilisation du "print_a_line" si vous voulez numéroté vos lignes
     
-Ouverture = open (input_file)    # On crée une variable pour ouvrir notre "Fichier_cible"
+Ouverture = open (input_file)    # On crée une variable pour ouvrir notre "input_file"
 
 print "On va print l'ensemble du fichier"
 
