@@ -643,6 +643,9 @@ def print_premier_dernier_mot_trier(phrase):
 #>>>
 #Lorsque s'affiche ça veuillez faire les indications suivante
 #A noter que le résultat sera different en fonction de la phrase que vous mettez
+
+#Les """ sont pour eviter de faire 1 milliard de '#' sur chaque ligne vous mettez 3 guillemet au debut/fin du paragraphe     #et c'est bon
+"""
 drend@drend:~/PycharmProjects/untitled$ python
 Python 2.7.9 (default, Aug 13 2016, 16:41:35) 
 [GCC 4.9.2] on linux2
@@ -676,4 +679,6 @@ sont
 >>> ex24.print_premier_dernier_mot_trier(phrase)
 Nous
 y
->>> 
+>>>
+"""
+
