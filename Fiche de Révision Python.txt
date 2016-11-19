@@ -793,3 +793,55 @@ for heure in range (0, 7):
 
 for sport in elements:
     print "%d pompe !!!" % sport
+
+---------------------------------------------Faire des boucles à fin programmé--------------------------------------------------
+
+numbers = []
+i = 0
+
+while i < 8:
+    print "A son summum i fait %d" % i
+    numbers.append(i)
+#Alors ici on va utiliser 'while i < 8:' pour notre boucle car sa va nous permettre de print
+#les meme phrase en boucle jusqu'a avoir depasser 8 au dessus la boucle s'arretera
+
+    i = i + 1
+    print "DES CHIFFRES MAINTENANT !!! :", numbers
+    print "Des chiffre par ci par la Oh %d" %i
+#Ici je vais vous expliquer comment on va proceder pour depasser 8 et ainsi stopper la boucle
+# alors 'i = i + 1' en gros de base 'i' fait 0 si on lui rajoute '+1' il fait '1' donc a chaque
+#fois que la boucle recommence 'i' fait est deja avec un numero au dessus de l'ancien
+#EXEMPLE:
+# i = 0
+
+#while i < 8:
+#i = i + 1
+# print "Ceci est un test i fait %d" %i
+# 1er tour de la boucle: Ceci est un test i fait 0
+# 2eme tour : Ceci est un test i fait 1
+# 3eme tour : Ceci est un test i fait 2
+# et sa fait la meme chose avec une chaine si on fait la commande
+#Chaine.append(i)
+
+#EXEMPLE:
+#Chaine = []
+#Chaine.append(i)
+# print "Ceci est une chaine:" , Chaine
+#1er tour: Ceci est une chaine [0]
+#2eme tour; Ceci est une chaine [0,1]
+#3eme tour: Ceci est une chaine: [0,1,2]
+#le .append permet de prendre ce qu'il y a  a l'interieur du contenue entre les parenthese
+# la c'etait 'Chaine.append(i)
+# et vu que 'i = i + 1'
+#La chaine prend le contenue de l'evolution de i
+#EN GROS la chaine evolue en meme temp que i
+
+
+
+print "ENCORE DES CHIFFRES !?!?:"
+
+
+for num in numbers:
+    print num
+    
+--------------------------------------------------------------------------------------------------------------------------------
