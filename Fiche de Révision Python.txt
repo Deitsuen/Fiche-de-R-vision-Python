@@ -553,4 +553,46 @@ print "normalement le resultat est",what, "appart si vous avez modifier ;)"
 
 # age,taille,poids,pointure sa peut radicalement changer selon ce que vous mettez
 
-----------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------Formule de Calcul-----------------------------------------------------------------
+
+print "c'est parti !"
+
+print "J'ai envie d\'aller a\ttokyo j'aime bien\n la facon \\ de vivre la bas"
+#La rien de bien compliquer c'est vers la fin du script que sa va etre interessant
+Para = """
+Aime\ttu\tle\tchocolat\t?
+Moi j'aime bien le chocolat c'est bon on peut le manger de tellement de maniere \nDIFERRENTE AVEC TELLEMENT DE VARIATION
+que j'adore sa !!!
+"""
+
+print"--------------------------"
+print Para
+print"--------------------------"
+
+
+five = 8 - 3
+
+print " cela devrait etre cinq: %s" % five
+
+def formule_de_calcul(debut):  #Ici on fait une formule de calcul qu'on va appliquer au phrase suivante
+    haricots = debut * 500   # "*" veut dire multiplier
+    noisette = haricots / 1000 # "/" veut dire diviser
+    noix = noisette / 100
+    return haricots, noisette, noix
+
+nombre_de_depart = 10000 # ici on remplace "debut" par nombre_de_depart qui est egal au chiffre 10000
+haricots, noisette, noix = formule_de_calcul(nombre_de_depart)
+
+#c'est apres avoir remplace "debut" par nombre_de_depart que la formule prend du sens
+
+print "le nombre de depart est %d" % nombre_de_depart
+print " on a %d d'haricots, %d de noisette et %d de noix " % (haricots, noisette,noix)
+
+nombre_de_depart = nombre_de_depart / 10 # la on divise nombre_de_depart par 10
+#et vu que nombre_de_depart est egal a 10000 on fait 10000/10 ce qui donnera un resultat moindre
+print"on peut egalement faire comme cela:"
+print " on a %d d'haricots, %d de noisette et %d de noix " % formule_de_calcul(nombre_de_depart)
+# on met notre formule de calcul avec notre nombre_de_depart qui a ete divise par 10 donc sa donnera
+# nous donnera des resultat moindre car si on met haricots,noisette,etc le resultat est fixe
+
