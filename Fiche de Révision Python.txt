@@ -844,4 +844,23 @@ print "ENCORE DES CHIFFRES !?!?:"
 for num in numbers:
     print num
     
+-----------------------------------------Numérotation de chaine-----------------------------------------------------------------
+
+animaux = ['leopard', 'tigre', 'lion', 'zebre', 'chat']
+ours = animaux [0]
+#Ici je vais vous expliquer l'importance des chiffre dans une chaine
+#une chaine est constituer de numero et c'est numero sont attribuer a ce que vous mettez dedans
+#Les numerotation des chaine suit la logique booleene et donc au lieu de commencer a 1 elle commence
+# a 0
+#EXEMPLE:
+#Chaine =  ['Un', 'Deux', 'Trois', 'Quatre' , 'Cinq']
+#Numerotation = Chaine [0]
+#print Numerotation
+#Si on lance le scripte sa nous donnera
+#Un
+#Sa nous a afficher Un car 0 est le chiffre avant les autres et non 1 car sa suit la logique booleene
+print ours
+print "le premier (1er) animal est a 0 est un leopard "
+print "l'animal a 0 est le 1er et est un leopard"
+
 --------------------------------------------------------------------------------------------------------------------------------
