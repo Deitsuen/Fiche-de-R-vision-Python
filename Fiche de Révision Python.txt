@@ -757,3 +757,39 @@ elif porte == "2":
         print "vous trouvez finalement la sortie et allez au village le plus proche vous finissez villageois de ce village et faite fortune"
         print "grace au recolte de votre ferme vous vous mariez et avec plein de sous "
         print "FIN"
+
+--------------------------------------------Faire des boucles-------------------------------------------------------------------
+
+le_compte = [1, 2, 3, 4, 5, 6]
+gourmandise = ['Chocolat', 'Fraise', 'Vanille', 'Caramel']
+voyage = [1, 'Shinjuku', 2, 'Akihabara', 3, 'Ginza']
+#Ici on va faire des chaines en gros repeter une meme phrase jusqu'a un nombre defini
+#Pour cree le premier element d'une boucle vous referencez a 'le_compte' , 'gourmandise' et enfin 'voyage'
+for nombre in le_compte:
+    print "Ceci est le compte %d" %nombre
+    #Par la suite vous faite lenomdevotreboucle
+    #EXEMPLE:  alphabet = [a,b,c,d], pour mettre le contenu de cette boucle dans une phrase il faut faire ceci
+    # for lettre in alphabet:
+    #     print "Ceci est la lettre %d" %lettre
+    #------------CE QUI AFFICHERA--------------
+    #Ceci est la lettre a
+    #Ceci est la lettre b
+    #Ceci est la lettre c
+    #Ceci est la lettre d
+    #A noter qu'une boucle a la limite que vous lui definissez si vous decider qu'elle s'arrete a 9000 elle ne s'arretera que   #a 9000 
+    #Donc faite attention a ce que vous mettez ;)
+
+for MIAM in gourmandise:
+    print "Tellement de parfum %s !!!" %MIAM
+
+for Japan in voyage:
+    print "J'ai tellement hate de partir a ces destination %r" % Japan
+
+elements = []
+
+for heure in range (0, 7):
+    print "Il est %d heure du matin" % heure
+    elements.append(heure)
+
+for sport in elements:
+    print "%d pompe !!!" % sport
