@@ -595,4 +595,85 @@ print"on peut egalement faire comme cela:"
 print " on a %d d'haricots, %d de noisette et %d de noix " % formule_de_calcul(nombre_de_depart)
 # on met notre formule de calcul avec notre nombre_de_depart qui a ete divise par 10 donc sa donnera
 # nous donnera des resultat moindre car si on met haricots,noisette,etc le resultat est fixe
+-----------------------------------------Gestionnaire de phrase-----------------------------------------------------------------
 
+def casseur_mot(stuff):
+    """ cette fonction segmente les mots """
+    mot = stuff.split(' ')
+    return mot
+
+def trieur_mot(mot):
+    """ trie les mots """
+    return sorted(mot)
+
+def print_premier_mot(mot):
+    """ print le premier mot apres le popping off """
+    mot = mot.pop(0)
+    print mot
+
+def print_dernier_mot(mot):
+    """ print le denier mot apres le popping off """
+    mot = mot.pop(-1)
+    print mot
+
+def trieur_phrase(phrase):
+    """ Segmente une phrase et renvoie les mots trier """
+    mot = casseur_mot(phrase)
+    return trieur_mot(mot)
+
+def print_premier_dernier_mot(phrase):
+    """print le premier et le dernier mot de la phrase"""
+    mot = casseur_mot(phrase)
+    print_premier_mot(mot)
+    print_dernier_mot(mot)
+
+def print_premier_dernier_mot_trier(phrase):
+    """ trie les mots et imprime le premier et le denier"""
+    mot = trieur_phrase(phrase)
+    print_premier_mot(mot)
+    print_dernier_mot(mot)
+    
+#Pour activer ce script il faudra passer par le terminal et tapez la chose suivante: python 
+#Ce qui normalement vous affichera ça 
+
+#drend@drend:~/PycharmProjects/untitled$ python
+#Python 2.7.9 (default, Aug 13 2016, 16:41:35) 
+#[GCC 4.9.2] on linux2
+#Type "help", "copyright", "credits" or "license" for more information.
+#>>>
+#Lorsque s'affiche ça veuillez faire les indications suivante
+#A noter que le résultat sera different en fonction de la phrase que vous mettez
+drend@drend:~/PycharmProjects/untitled$ python
+Python 2.7.9 (default, Aug 13 2016, 16:41:35) 
+[GCC 4.9.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ex24
+>>> phrase = "Nous pouvons tous y arriver tant que le coeur et la volonte y sont"
+>>> mot = ex24.casseur_mot(phrase)
+>>> mot
+['Nous', 'pouvons', 'tous', 'y', 'arriver', 'tant', 'que', 'le', 'coeur', 'et', 'la', 'volonte', 'y', 'sont']
+>>> mot_trier = ex24.trieur_mot(mot)
+>>> mot_trier
+['Nous', 'arriver', 'coeur', 'et', 'la', 'le', 'pouvons', 'que', 'sont', 'tant', 'tous', 'volonte', 'y', 'y']
+>>> ex24.print_premier_mot(mot)
+Nous
+>>> ex24.print_dernier_mot(mot)
+sont
+>>> mot
+['pouvons', 'tous', 'y', 'arriver', 'tant', 'que', 'le', 'coeur', 'et', 'la', 'volonte', 'y']
+>>> ex24.print_premier_mot(mot_trier)
+Nous
+>>> ex24.print_dernier_mot(mot_trier)
+y
+>>> mot_trier
+['arriver', 'coeur', 'et', 'la', 'le', 'pouvons', 'que', 'sont', 'tant', 'tous', 'volonte', 'y']
+>>> mot_trier =ex24.trieur_phrase(phrase)
+>>> mot_trier
+['Nous', 'arriver', 'coeur', 'et', 'la', 'le', 'pouvons', 'que', 'sont', 'tant', 'tous', 'volonte', 'y', 'y']
+>>> ex24.print_premier_dernier_mot(phrase)
+Nous
+sont
+>>> ex24.print_premier_dernier_mot_trier(phrase)
+Nous
+y
+>>> 
