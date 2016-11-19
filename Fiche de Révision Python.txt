@@ -682,3 +682,78 @@ y
 >>>
 """
 
+-----------------------------------------Question à choix multiple--------------------------------------------------------------
+
+print "Vous rentrez dans une salle sombre et en face de vous s'y trouve deux porte tapes 1 ou 2 pour choisir l'une des portes"
+porte = raw_input("> ")
+#Ici ce sont des questions a choix multiple vous print une phrase et pour choisir des reponse vous faite
+#EXEMPLE:
+
+#print "vous avez le choix entre yaourt fraise ou yaourt chocolat que choississez vous ?"
+#print "1.le yaourt fraise"
+#print "2. le yaourt chocolat"
+#yaourt = raw_input()
+
+#La nous allons definir nos reponse et mettre les phrase en consequence a ce choix
+
+#if yaourt == "1"
+# 'if' veut dire 'si' donc en francais sa donne 'si yaourt == 1' dont d'ailleur 'yaourt' et le raw_input donc le choix donne a #l'utilisateur
+#donc EN GROS TRADUCTION if = si, yaourt = raw_input(choix), "si choix == "1" print "tel et tel phrase"
+
+#print "vous aviez oubliez que vous detestiez la fraise vous haissez ce moment de plaisir et decidez"
+#print "d'aller bruler tous les fraisier du monde"
+#print "FIN"
+
+# elif yaourt == "2"   'elif' = sinon si
+#print "trop bon ce yaourt vous avez kiffe votre moment gouter et decidez de repandre le bohnneur dans le monde"
+#print "via des yaourt au chocolat le monde entier en mange les guerre s'arrete et tous le monde vie en harmonie
+#print "FIN"
+
+
+if porte == "1":
+   print " vous voyez un demon qui delecte du vin qui emane des cris de douleurs"
+   print "1. vous lui prenez son verre de vin et le balance par terre"
+   print "2. vous passez discretement par la trappe qui emane de la lumiere a droite de la salle"
+
+   bear = raw_input("> ")
+
+   if bear == "1":
+       print "Vous avez reussi a prendre des mains du demon le verre et a le balancez par terre mais il ne se brise pas"
+       print "le demon s'arme de sa masse qui etait a droite de son trone et vous fracasse le crane "
+       print "FIN"
+
+   elif bear == "2":
+       print "vous reusissez a vous enfuir par la trappe mais le demon a failli vous attrapez de peu vous ressortez et voyez"
+       print "un monde fantastique et vous remarquez que vous etiez dans un donjon vous allez dans la ville la plus proche"
+       print "et demandez un boulot a l'aubergiste vous y allez et tombez sur 1 tonne de diamant vous finissez RICHE"
+       print "FIN"
+   else:
+       print " Vous etes paralyse de peur le demon vous remarque vous finissez vous jours en tant que esclave de ce demon"
+
+       print "FIN"
+
+elif porte == "2":
+    print "vous tombez sur une grande salle au bout de cette salle vous apercevez ce qui semble etre une ceremonie sacrificielle"
+    print "1. vous apercevez une corde qui mene a l'etage au dessus"
+    print "2. vous trouvez une pierre de couleur violette qui brille d'un rouge intense"
+
+    instinct = raw_input("> ")
+
+    if instinct == "1" or instinct == "2":
+        print "Les demon qui sacrifiai femme et enfant vous remarque et remarque votre collier autour du cou"
+        print "ou il ai marque Satanas retro vade il crient l'elu vous prennent de force et vous pose sur une stelle a symbole etrange "
+        print " il vous offre femme et or et font couler votre sang sur la stelle ce qui vous transforme en prince demon"
+        print "avec votre nouvelle force vous decidez de sortir de cet endroit pour allez conquerir le monde"
+        print "finalement vous reussisez a sortir des trefond de ce donjon avec votre armee des ternebre dont rien ne lui resiste"
+        print "vous reussissez ce que vous avez entrepris en assiegeant toutes les capitale et endroit civilise du monde"
+        print "vous etes devenu le dieu demon roi du monde "
+        print "vous coulez dans l'or et dans les femmes"
+        print "et puis un beau jour vous marchez dehors glissez sur une peau de banane et vous vous cassez la nuque"
+        print "FIN"
+    else:
+        print " vous voyez une etrange grotte a droite de vous, vous empruntez la grote voyez de la lumiere qui en emane "
+        print "vous tombez nez a nez avec une jeune femme perdu vous vous parlez et essayez de trouver une sortie ensemble"
+        print "lors de la tentative d'evasion vous prouvez votre courage enver la jeune femme qui tombe sous votre charme"
+        print "vous trouvez finalement la sortie et allez au village le plus proche vous finissez villageois de ce village et faite fortune"
+        print "grace au recolte de votre ferme vous vous mariez et avec plein de sous "
+        print "FIN"
