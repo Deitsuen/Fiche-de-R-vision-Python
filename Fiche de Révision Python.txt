@@ -406,8 +406,10 @@ open.write(lecture)
 
 #Ici on peut constater que l'objet "write" est utilisé pour écrire ce qui est contenue dans lecture
 
-#sinon pour décrire "open" ouvre le fichier sortie(to_file) et open.write écris dans le fichier de sortie ce qui est contenue dans #la variable entre () dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable "ouverture" et dans cette #variable il est contenue le fichier d'entrée (from_file)et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au #fichier de sortie.
-
+#sinon pour décrire "open" ouvre le fichier sortie(to_file) et open.write écris dans le fichier de sortie ce qui est contenue dans     
+#la variable entre () dans l'exemple "lecture" donc lecture va ouvrir ce qui est contenue dans la variable "ouverture" et dans cette    
+#variable il est contenue le fichier d'entrée (from_file)et l'objet "write" va écrire ce qui est contenue dans le fichier d'entrée au 
+#fichier de sortie.
 ------------------------------------------------Crée des Fonctions--------------------------------------------------------------
 #Pour crée des fonctions il faut faire ceci
 
